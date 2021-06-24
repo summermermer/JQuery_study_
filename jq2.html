@@ -1,0 +1,43 @@
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>JQuery Intro</title>
+
+    <script src="C:\Users\rnj10\Desktop\JS\jquery\test\data\jquery-1.9.1.js"></script>
+
+
+    <script>
+        function func(){
+            createElement();
+            addAttribute();
+        }
+        function createElement(){
+            var criteriaNode = document.getElementByld;
+            var newNode = document.createElement("p")
+            newNode.innerHTML="새로운 단락입니다.";
+            newNode.setAttribute("id","para");
+            document.body.insertBefore(newNode,criteriaNode);
+        }
+
+        function addAttribute(){
+            document.getElementByld.setAttribute("style","color:red");
+        }
+    </script>
+
+</head>
+
+
+
+<body>
+    <h1>아직 생성되지 않은 HTML 요소에 속성 추가</h1>
+    <button onclick="func()">속성 추가!</button>
+    <p id="text"></p>
+
+</body>
+
+
+
+</html>
