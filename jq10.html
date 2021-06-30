@@ -1,0 +1,39 @@
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>JQuery Element Clone</title>
+
+    <script src="C:\Users\rnj10\Desktop\JS\jquery\test\data\jquery-1.9.1.js"></script>
+
+
+    <script>
+        $(function(){
+            $("button").on("click",function(){
+                $("#firstItem").clone().appendTo("#list");
+            });
+        });
+
+    </script>
+
+</head>
+
+
+
+<body>
+    <h1>.clone() Method</h1>
+    <ul id="list">
+        <li id="firstItem">First Item!</li>
+        <li> Second Item!</li>
+        <li> Third Item!</li>
+    </ul>
+    <button> item copy </button>
+
+
+</body>
+
+
+
+</html>
