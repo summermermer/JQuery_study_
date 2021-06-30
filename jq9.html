@@ -1,0 +1,36 @@
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>JQuery Element Access</title>
+
+    <script src="C:\Users\rnj10\Desktop\JS\jquery\test\data\jquery-1.9.1.js"></script>
+
+
+    <script>
+        $(function(){
+            $("button").on("click",function(){
+                var imgSrc=$("img").attr("src");
+                $("img").attr("src","C:\Users\rnj10\Desktop\1.PNG");
+            });
+        });
+    </script>
+
+</head>
+
+
+
+<body>
+    <h1>.attr() method</h1>
+    <p>아래 버튼을 누르면 이미지가 변경됩니다</p>
+    <button>change src property</button><br><br>
+    <img src="C:\Users\rnj10\Desktop\girlly44.jpg" style="width: 200px; height: 200px; border: 1px solid black">
+
+
+</body>
+
+
+
+</html>
