@@ -1,0 +1,39 @@
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>JQuery Intro</title>
+
+    <script src="C:\Users\rnj10\Desktop\JS\jquery\test\data\jquery-1.9.1.js"></script>
+
+
+    <script>
+        $(function(){
+            $("button").on("click",function(){
+                $("#list").find("li").eq(1).html("selected second item");
+            });
+        });
+
+    </script>
+
+</head>
+
+
+
+<body>
+    <h1>Method Chaining</h1>
+    <ul id="list">
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+    </ul>
+    <button>change text</button>
+
+
+</body>
+
+
+
+</html>
