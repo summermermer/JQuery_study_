@@ -1,0 +1,39 @@
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>JQuery Element Remove</title>
+
+    <script src="C:\Users\rnj10\Desktop\JS\jquery\test\data\jquery-1.9.1.js"></script>
+
+
+    <script>
+        $(function() {
+			$("button").on("click", function() {
+				$(".content").remove(".first, .second");
+			});
+		});
+    </script>
+
+</head>
+
+
+
+<body>
+    <h1>.remove() method</h1>
+	<div>
+		<div class="content first">1st content</div>
+		<div class="content second">2nd content</div>
+		<div class="content third">3rd content</div>
+	</div>
+	<br>
+	<button>delete div element</button>
+
+
+</body>
+
+
+
+</html>
