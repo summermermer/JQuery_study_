@@ -15,7 +15,7 @@
             addAttribute();
         }
         function createElement(){
-            var criteriaNode = document.getElementByld;
+            var criteriaNode = document.getElementByld("text");
             var newNode = document.createElement("p")
             newNode.innerHTML="새로운 단락입니다.";
             newNode.setAttribute("id","para");
@@ -23,7 +23,7 @@
         }
 
         function addAttribute(){
-            document.getElementByld.setAttribute("style","color:red");
+            document.getElementByld("para").setAttribute("style","color:red");
         }
     </script>
 
