@@ -1,0 +1,46 @@
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>JQuery Element Insert</title>
+
+    <script src="C:\Users\rnj10\Desktop\JS\jquery\test\data\jquery-1.9.1.js"></script>
+
+
+    <script>
+        $(function(){
+            $("#firstBtn").on("click",function(){
+                $("#firstItem").appendTo("#list");
+            });
+            $("#secondBtn").on("click",function(){
+                $("#secondItem").appendTo("#list");
+            });
+            $("#thirdBtn").on("click",function(){
+                $("#thirdItem").appendTo("#list");
+            });
+        });
+
+    </script>
+
+</head>
+
+
+
+<body>
+    <h1>.appendTo() method</h1>
+    <p> push buttons from left! </p>
+    <ul id="list">
+        <li id="firstItem"> First Item!</li>
+        <li id="secondItem"> Second Item!</li>
+        <li id="thirdItem"> Third Item!</li>
+    </ul>
+    <button id="firstBtn">add first item</button>
+    <button id="secondBtn">add second item</button>
+    <button id="thirdBtn">add third item</button>
+</body>
+
+
+
+</html>
