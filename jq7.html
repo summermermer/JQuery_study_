@@ -12,7 +12,11 @@
     <script>
         $(function(){
             $("button").on("click",function(){
-                $("#list").find("li").eq(1).html("selected second item");
+                $("#list")
+                    .find("li")
+                    .eq(1).html("selected second item")
+                    .end()
+                    .eq(2).html("also selected third item");
             });
         });
 
